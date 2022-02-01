@@ -21,6 +21,7 @@
        <link rel="stylesheet" href="{% static 'css/templatemo-edu-meeting.css' %}">
        <link rel="stylesheet" href="{% static 'css/owl.css' %}">
        <link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+       <link rel="stylesheet" href="{% static 'css/cards.css' %}">
   
 
      </head>
@@ -63,10 +64,11 @@
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
+                        <li><a href="/">Home</a></li>
                           <li><a href="{% url 'meetings' %}">Meetings</a></li>
                           <li><a href="{% url 'about' %}">About us</a></li>
-                          <li class="scroll-to-section"><a href="#apply">Wiki</a></li>
+                          <li><a href="{% url 'wiki' %}">Wikipedia</a></li>
+                          <!-- <li class="scroll-to-section"><a href="#apply">Wiki</a></li> -->
                           <li class="has-sub">
                               <a href="javascript:void(0)">Pages</a>
                               <ul class="sub-menu">

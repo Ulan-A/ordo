@@ -18,3 +18,7 @@ def about(request):
     return render(request, 'main/about.html')
 
 
+def wiki(request):
+    return render(request, 'main/wiki.html')
+
+
