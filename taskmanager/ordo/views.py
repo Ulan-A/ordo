@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 
 
 # Create your views here.
@@ -22,3 +22,5 @@ def wiki(request):
     return render(request, 'main/wiki.html')
 
 
+def forum(request):
+    return render(request, 'main/forum.html')
