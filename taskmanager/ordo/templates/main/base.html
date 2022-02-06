@@ -80,6 +80,14 @@
                           </li>
                           <!-- <li class="scroll-to-section"><a href="{% url 'about' %}">About us</a></li>  -->
                           <li><a href="{% url 'forum' %}">Forum</a></li>
+                          <!-- Вход и выход -->
+                            {% if user.is_authenticated %}
+                            <li><a href="{% url 'account_logout' %}">Выход</a></li>
+                            {% else %}
+                            <li><a href="{% url 'account_login' %}">Вход</a></li>
+                            <li><a href="{% url 'account_signup' %}">Регистрация</a></li>
+                            {% endif %}
+                            <!-- Вход и выход -->
                       </ul>        
                       <a class='menu-trigger'>
                           <span>Menu</span>
