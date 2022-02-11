@@ -4,10 +4,11 @@
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
     {% endblock %}
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
   </head>
   <body>
     {% block body %}
-
     {% if messages %}
     <div>
       <strong>Messages:</strong>
@@ -19,15 +20,17 @@
     </div>
     {% endif %}
 
-    <div>
-      <strong>Menu:</strong>
+    <div class="main-menu">
+      <!-- <strong>Menu</strong> -->
       <ul>
         {% if user.is_authenticated %}
         <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
         <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
         {% else %}
-        <li><a href="{% url 'account_login' %}">Sign In</a></li>
-        <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
+        <div class="sign">
+        <li><a class="sign-in" href="{% url 'account_login' %}">Sign In</a></li>
+        <li><a class="sign-up"  href="{% url 'account_signup' %}">Sign Up</a></li>
+        </div>
         {% endif %}
       </ul>
     </div>

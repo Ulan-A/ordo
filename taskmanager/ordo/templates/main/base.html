@@ -67,13 +67,13 @@
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
                         <li><a href="/">Home</a></li>
-                          <li><a href="{% url 'meetings' %}">Meetings</a></li>
                           <li><a href="{% url 'about' %}">About us</a></li>
-                          <li><a href="{% url 'wiki' %}">Wikipedia</a></li>
                           <!-- <li class="scroll-to-section"><a href="#apply">Wiki</a></li> -->
                           <li class="has-sub">
                               <a href="javascript:void(0)">Pages</a>
                               <ul class="sub-menu">
+                                  <li><a href="{% url 'meetings' %}">Meetings</a></li>
+                                  <li><a href="{% url 'wiki' %}">Wikipedia</a></li>
                                   <li><a href="{% url 'meetings' %}">Upcoming Meetings</a></li>
                                   <li><a href="{% url 'meeting-details' %}">Meeting Details</a></li>
                               </ul>
