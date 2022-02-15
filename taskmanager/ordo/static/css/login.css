@@ -4,7 +4,10 @@
 body {
   margin-bottom: 50px;
   overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .container {
   height: 430px;
   width: 350px;
@@ -42,7 +45,7 @@ a {
   cursor: pointer;
 }
 a:hover {
-  color: rgb(199, 0, 0);
+  color: rgb(53, 112, 163);
 }
 .button {
   background-color: #4caf50; /* Green */
@@ -57,9 +60,10 @@ a:hover {
   margin-left: 7px;
 }
 .button:hover {
-  background-color: rgb(32, 184, 163);
+  background-color: rgb(53, 112, 163);
+  color: #eee;
 }
-.primaryAction {
+.primaryAction-email {
   background-color: #4caf50; /* Green */
   border: none;
   color: white;
@@ -84,12 +88,24 @@ a:hover {
   border-radius: 7px;
   margin-left: 107px;
 }
+.primaryAction {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 7px;
+  margin-left: 25px;
+}
 .primaryAction:hover {
-  background-color: rgb(32, 184, 163);
+  background-color: rgb(53, 112, 163);
   cursor: pointer;
 }
 .primaryAction1:hover {
-  background-color: rgb(32, 184, 163);
+  background-color: rgb(53, 112, 163);
   cursor: pointer;
 }
 .remember {
@@ -138,7 +154,7 @@ li {
   background-color: #00000024; /* Green */
   border: none;
   color: white;
-  padding: 5px 145px 0px;
+  padding: 5px 137px 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -158,8 +174,13 @@ li {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 20px 10px;
   color: #fff;
+}
+.sign-in:hover {
+  color: #eee;
+  cursor: pointer;
+  background-color: rgb(53, 112, 163);
 }
 .sign-up {
   display: table;
@@ -167,6 +188,112 @@ li {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 20px 10px;
   color: #fff;
+}
+.sign-up:hover {
+  color: #eee;
+  cursor: pointer;
+  background-color: rgb(53, 112, 163);
+}
+.logout {
+  height: 150px;
+  width: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #00000024;
+  position: relative;
+  display: table;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 10px 10px 0px 10px;
+}
+.logout h1 {
+  margin-top: 10px;
+}
+.log-out {
+  height: 30px;
+  width: 110px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #00000024;
+  position: relative;
+  display: table;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 5px 0px 5px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: #4caf50;
+}
+.log-out:hover {
+  background-color: rgb(53, 112, 163);
+}
+.log-out a {
+  margin-top: 2px;
+  margin-left: 24px;
+  color: #eee;
+  cursor: pointer;
+}
+.change-email {
+  height: 33px;
+  width: 110px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #00000024;
+  display: table;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 10px 10px 0px 10px;
+  background-color: #4caf50;
+}
+.change-email a {
+  display: table;
+  color: #eee;
+}
+.change-email a:hover {
+  color: rgb(53, 112, 163);
+}
+.message {
+  height: 100px;
+  width: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #00000024;
+  position: relative;
+  display: table;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 10px 10px 0px 10px;
+}
+.btn1 {
+  border: none;
+  margin-left: 72px;
+  width: 40%;
+  height: 30px;
+  border-radius: 5px;
+  color: #eee;
+  background-color: #4caf50;
+}
+.btn1:hover {
+  background-color: rgb(53, 112, 163);
+  color: #eee;
+  cursor: pointer;
 }

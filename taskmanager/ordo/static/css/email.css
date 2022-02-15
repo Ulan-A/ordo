@@ -1,0 +1,58 @@
+.content-email {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eee;
+  border-radius: 10px;
+  border: solid 1px rgb(136, 136, 136);
+  margin-top: 35px;
+  padding: 10px;
+}
+.form-action {
+  border-radius: 10px;
+  padding: 10px 100px 10px 100px;
+}
+
+p {
+  font-size: 16px;
+}
+.buttonHolder {
+  display: grid;
+  margin-left: 55px;
+  margin-bottom: -30px;
+}
+.primaryAction-email:hover {
+  color: #eee;
+  background-color: rgb(53, 112, 163);
+}
+.ctrlHolder {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.primaryAction-email {
+  margin-top: -30px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  height: 35px;
+  width: 300px;
+}
+.email_list {
+  border: none;
+  border-radius: 10px;
+}
+.add-email {
+  margin-left: 185px;
+  height: 30px;
+  width: 100px;
+  color: #eee;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+}
+.add-email:hover {
+  cursor: pointer;
+  background-color: rgb(53, 112, 163);
+}
