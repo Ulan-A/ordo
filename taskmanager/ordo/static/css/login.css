@@ -6,10 +6,11 @@ body {
   overflow: scroll;
   margin-left: auto;
   margin-right: auto;
+  background: lightseagreen;
 }
 
 .container {
-  height: 430px;
+  height: 450px;
   width: 350px;
   margin-top: auto;
   margin-bottom: auto;
@@ -19,15 +20,19 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  padding: 10px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;
 }
 h1 {
   text-align: center;
+  color: #eee;
   margin-bottom: 0px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 input {
   border-radius: 4px;
@@ -43,10 +48,9 @@ input {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #eee;
 }
-a:hover {
-  color: rgb(53, 112, 163);
-}
+
 .button {
   background-color: #4caf50; /* Green */
   border: none;
@@ -143,7 +147,8 @@ ul {
 }
 li {
   list-style-type: none;
-  color: #4caf50;
+  color: #eee;
+  margin-top: 15px;
   border-radius: 4px;
   margin-bottom: 10px;
   padding: 5px 5px 5px 5px;
@@ -151,7 +156,7 @@ li {
 
 .sign {
   list-style-type: none;
-  background-color: #00000024; /* Green */
+  background-color: transparent;
   border: none;
   color: white;
   padding: 5px 137px 0px;
@@ -171,11 +176,11 @@ li {
 .sign-in {
   display: table;
   background-color: #4caf50;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -92px;
   border-radius: 5px;
   padding: 10px 20px 10px;
   color: #fff;
+  margin-top: -24px;
 }
 .sign-in:hover {
   color: #eee;
@@ -186,10 +191,11 @@ li {
   display: table;
   background-color: #4caf50;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: -100px;
   border-radius: 5px;
   padding: 10px 20px 10px;
   color: #fff;
+  margin-top: -61px;
 }
 .sign-up:hover {
   color: #eee;
@@ -211,7 +217,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
 }
 .logout h1 {
   margin-top: 10px;
@@ -232,6 +238,7 @@ li {
   margin-right: auto;
   border-radius: 10px;
   background-color: #4caf50;
+  cursor: pointer;
 }
 .log-out:hover {
   background-color: rgb(53, 112, 163);
@@ -259,12 +266,12 @@ li {
   padding: 10px 10px 0px 10px;
   background-color: #4caf50;
 }
-.change-email a {
+.change-email {
   display: table;
   color: #eee;
 }
-.change-email a:hover {
-  color: rgb(53, 112, 163);
+.change-email:hover {
+  background-color: rgb(53, 112, 163);
 }
 .message {
   height: 100px;
@@ -274,14 +281,16 @@ li {
   background: #00000024;
   position: relative;
   display: table;
-  justify-content: center;
+  text-align: center;
   flex-direction: column;
   padding: 10px;
+  color: #eee;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
+  text-align: center;
 }
 .btn1 {
   border: none;
@@ -296,4 +305,30 @@ li {
   background-color: rgb(53, 112, 163);
   color: #eee;
   cursor: pointer;
+}
+p {
+  color: #eee;
+  text-align: center;
+}
+.ctrlHolder {
+  color: #eee;
+}
+h2 {
+  color: #eee;
+  margin-left: 120px;
+}
+.socialaccount_ballot {
+  background: #dd4b39;
+  color: white;
+  width: 35%;
+  text-align: center;
+  border-radius: 5px;
+}
+.socialaccount_ballot:hover {
+  background-color: #39dd705d;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.socialaccount_providers {
+  background-color: #4caf50;
 }
