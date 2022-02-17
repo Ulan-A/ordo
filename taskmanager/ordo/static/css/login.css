@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  height: 450px;
+  height: 453px;
   width: 350px;
   margin-top: auto;
   margin-bottom: auto;
@@ -20,7 +20,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  margin-top: 70px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -49,6 +49,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #eee;
+  font-size: 13px;
 }
 
 .button {
@@ -204,27 +205,27 @@ li {
 }
 .logout {
   height: 150px;
-  width: 250px;
-  margin-top: auto;
-  margin-bottom: auto;
-  background: #00000024;
-  position: relative;
-  display: table;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  padding: 10px 10px 10px 10px;
+    width: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #00000024;
+    position: relative;
+    display: table;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
 }
 .logout h1 {
   margin-top: 10px;
 }
-.log-out {
+/* .log-out {
   height: 30px;
-  width: 110px;
+  width: 96px;
   margin-top: auto;
   margin-bottom: auto;
   background: #00000024;
@@ -236,22 +237,22 @@ li {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #4caf50;
   cursor: pointer;
-}
-.log-out:hover {
+} */
+/* .log-out:hover {
   background-color: rgb(53, 112, 163);
-}
-.log-out a {
+} */
+/* .log-out a {
   margin-top: 2px;
   margin-left: 24px;
   color: #eee;
   cursor: pointer;
-}
-.change-email {
+} */
+/* .change-email {
   height: 33px;
-  width: 110px;
+  width: 90px;
   margin-top: auto;
   margin-bottom: auto;
   background: #00000024;
@@ -262,17 +263,17 @@ li {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 10px 0px 10px;
   background-color: #4caf50;
-}
-.change-email {
+} */
+/* .change-email {
   display: table;
   color: #eee;
-}
-.change-email:hover {
+} */
+/* .change-email:hover {
   background-color: rgb(53, 112, 163);
-}
+} */
 .message {
   height: 100px;
   width: 350px;
@@ -294,12 +295,12 @@ li {
 }
 .btn1 {
   border: none;
-  margin-left: 72px;
-  width: 40%;
-  height: 30px;
-  border-radius: 5px;
-  color: #eee;
-  background-color: #4caf50;
+    margin-left: 72px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    color: #eee;
+    background-color: #4caf50;
 }
 .btn1:hover {
   background-color: rgb(53, 112, 163);
@@ -315,20 +316,46 @@ p {
 }
 h2 {
   color: #eee;
-  margin-left: 120px;
+  text-align: center;
 }
 .socialaccount_ballot {
-  background: #dd4b39;
+  background-color: #4267B2;
   color: white;
   width: 35%;
+  height: 33px;
   text-align: center;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.socialaccount_ballot:hover {
-  background-color: #39dd705d;
+}
+.socialaccount_ballot :hover {
+  background-color: #6d6d6d5d;
   cursor: pointer;
   transition: 0.3s ease;
 }
 .socialaccount_providers {
   background-color: #4caf50;
+}
+.bitton{
+  font-size: 16px;
+  color: #4267b2;
+}
+.login-sign{
+  width: 30%;
+  height: 18px;
+  background-color: #4267B2;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.login-sign li{
+  justify-content: space-between;
+  display: contents;
+  padding: 10px;
+  margin: 40px;
 }
