@@ -205,20 +205,20 @@ li {
 }
 .logout {
   height: 150px;
-    width: 300px;
-    margin-top: auto;
-    margin-bottom: auto;
-    background: #00000024;
-    position: relative;
-    display: table;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
+  width: 300px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #00000024;
+  position: relative;
+  display: table;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
 }
 .logout h1 {
   margin-top: 10px;
@@ -295,12 +295,12 @@ li {
 }
 .btn1 {
   border: none;
-    margin-left: 72px;
-    width: 50%;
-    height: 30px;
-    border-radius: 5px;
-    color: #eee;
-    background-color: #4caf50;
+  margin-left: 72px;
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  color: #eee;
+  background-color: #4caf50;
 }
 .btn1:hover {
   background-color: rgb(53, 112, 163);
@@ -319,7 +319,7 @@ h2 {
   text-align: center;
 }
 .socialaccount_ballot {
-  background-color: #4267B2;
+  background-color: #4267b2;
   color: white;
   width: 35%;
   height: 33px;
@@ -328,7 +328,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-}
+
 .socialaccount_ballot :hover {
   background-color: #6d6d6d5d;
   cursor: pointer;
@@ -337,14 +337,14 @@ h2 {
 .socialaccount_providers {
   background-color: #4caf50;
 }
-.bitton{
+.bitton {
   font-size: 16px;
   color: #4267b2;
 }
-.login-sign{
+.login-sign {
   width: 30%;
   height: 18px;
-  background-color: #4267B2;
+  background-color: #4267b2;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -353,7 +353,7 @@ h2 {
   display: flex;
   justify-content: space-around;
 }
-.login-sign li{
+.login-sign li {
   justify-content: space-between;
   display: contents;
   padding: 10px;
