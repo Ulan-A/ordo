@@ -6,21 +6,21 @@ body {
   overflow: scroll;
   margin-left: auto;
   margin-right: auto;
-  background: lightseagreen;
+  background: rgba(199, 37, 41, 1);
 }
 
 .container {
-  height: 453px;
+  height: 450px;
   width: 350px;
   margin-top: auto;
   margin-bottom: auto;
-  background: #00000024;
+  background: #1f272b;
   position: relative;
   display: table;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -40,6 +40,7 @@ input {
   width: 93%;
   padding: 10px;
   margin-top: 5px;
+  margin-bottom: -7;
 }
 .regist {
   text-align: center;
@@ -47,13 +48,12 @@ input {
 }
 a {
   text-decoration: none;
-  cursor: pointer;
   color: #eee;
   font-size: 13px;
 }
 
 .button {
-  background-color: #4caf50; /* Green */
+  background-color: #545454; /* Green */
   border: none;
   color: white;
   padding: 10px 30px;
@@ -94,7 +94,7 @@ a {
   margin-left: 107px;
 }
 .primaryAction {
-  background-color: #4caf50; /* Green */
+  background-color: #545454; /* Green */
   border: none;
   color: white;
   padding: 10px 30px;
@@ -119,9 +119,9 @@ a {
 .container1 {
   height: 450px;
   width: 350px;
-  margin-top: 20px;
+  margin-top: 100px;
   margin-bottom: auto;
-  background: #00000024;
+  background: #1f272b;
   position: relative;
   display: table;
   justify-content: center;
@@ -152,7 +152,7 @@ li {
   margin-top: 15px;
   border-radius: 4px;
   margin-bottom: 10px;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 10px 5px;
 }
 
 .sign {
@@ -206,9 +206,8 @@ li {
 .logout {
   height: 150px;
   width: 300px;
-  margin-top: auto;
-  margin-bottom: auto;
-  background: #00000024;
+  margin-top: 190px;
+  background: #1f272b;
   position: relative;
   display: table;
   justify-content: center;
@@ -318,8 +317,8 @@ h2 {
   color: #eee;
   text-align: center;
 }
-.socialaccount_ballot {
-  background-color: #4267b2;
+/* .socialaccount_ballot {
+  background-color: #9d1a1d;
   color: white;
   width: 35%;
   height: 33px;
@@ -327,11 +326,10 @@ h2 {
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .socialaccount_ballot :hover {
-  background-color: #6d6d6d5d;
-  cursor: pointer;
+  background: #6d6d6d5d;
   transition: 0.3s ease;
 }
 .socialaccount_providers {
@@ -358,4 +356,37 @@ h2 {
   display: contents;
   padding: 10px;
   margin: 40px;
+}
+.botton {
+  margin-top: 150px;
+  background-color: #545454;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: table;
+  font-size: 16px;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.botton button {
+  background-color: #545454;
+  border: none;
+  color: #eee;
+  cursor: pointer;
+}
+
+.socialaccount_ballot li {
+  background-color: #9d1a1d;
+  color: white;
+  width: 35%;
+  height: 17px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 18px;
+  margin-bottom: -2px;
+  margin-top: 4px;
 }
