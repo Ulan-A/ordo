@@ -10,9 +10,8 @@ body {
 }
 
 .container {
-  height: 521px;
+  height: 530px;
   width: 350px;
-  margin-top: auto;
   margin-bottom: auto;
   background: #1f272b;
   position: relative;

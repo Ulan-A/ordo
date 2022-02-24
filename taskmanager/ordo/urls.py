@@ -8,6 +8,9 @@ urlpatterns = [
     path('meeting-details/', views.meeting_details, name='meeting-details'),
     path('about/', views.about, name='about'),
     path('wiki/', views.wiki, name='wiki'),
-    path('forum/', views.forum, name='forum'),
-
+    path('forum_home', views.forum_home, name='forum-home'),
+    path('<str:room>/', views.room, name='room'),
+    path('checkview', views.checkview, name='checkview'),
+    path('send', views.send, name='send'),
+    path('getMessages/<str:room>/', views.getMessages, name='getMessages'),
 ]
