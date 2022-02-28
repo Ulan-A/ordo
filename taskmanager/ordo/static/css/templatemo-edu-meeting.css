@@ -1013,7 +1013,7 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .meeting-item .down-content .date {
-  float: left;
+  /* float: left; */
   text-align: center;
   display: inline-block;
   margin-right: 20px;
@@ -1144,6 +1144,11 @@ section.our-courses {
   background-size: cover;
   padding-top: 140px;
   padding-bottom: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-direction: initial;
+  flex-wrap: wrap;
 }
 
 .our-courses .item .down-content {
