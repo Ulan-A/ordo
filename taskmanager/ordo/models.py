@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from django.utils import timezone
 
 # Create your models here.
 
@@ -10,6 +11,6 @@ class Room(models.Model):
 
 class Message(models.Model):
     value = models.CharField(max_length=1000000)
-    date = models.TimeField(default=datetime.now, blank=True)
+    date = models.DateField(default=datetime.now, blank=True)
     user = models.CharField(max_length=1000000)
     room = models.CharField(max_length=1000000)

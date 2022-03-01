@@ -191,3 +191,10 @@
   transform: translateY(0px);
   transition-delay: 0.75s;
 }
+.workers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+}
