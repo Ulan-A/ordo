@@ -1,11 +1,18 @@
+from dataclasses import field
+from turtle import title
 from django.shortcuts import render, redirect
+from numpy import product
 from ordo .models import Room, Message
 from django.http import HttpResponse, JsonResponse
+from . models import *
 
 
 # Create your views here.
 def index(request):
-    return render(request, 'main/index.html')
+    meetings = Meetings.objects.all()
+    context = {'meetings': meetings}
+
+    return render(request, 'main/index.html', context)
 
 
 def meetings(request):

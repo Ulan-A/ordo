@@ -10,8 +10,8 @@ body {
 }
 .thumbs {
   width: 100%;
-  max-width: 395px; /* опционально */
-  margin: 10px 0px 10px 0px;
+  max-width: 340px;
+  margin: 10px 20px 10px 0px;
   opacity: 0.99;
   overflow: hidden;
   position: relative;
@@ -51,7 +51,7 @@ body {
 .thumbs img {
   display: block;
   width: 100%; /* ширина картинки */
-  height: auto; /* высота картинки */
+  height: 200px; /* высота картинки */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 10px;

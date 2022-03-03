@@ -116,133 +116,169 @@
           </div>
         </div>
         <div class="col-lg-8">
-          <div class="row">
-            <div class="col-lg-6">
+        <div class="row-meetings">
+        {% for meetings in meetings %}
               <div class="thumbs">
-                <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg">
+                <img src="{{ meetings.image.url }}">
                 <div class="caption">
-                    <span class="title">Заголовок картинки</span>
-                    <span class="infos">Краткое описание или анонс записи</span>
+                    <span class="title">{{ meetings.title }}</span>
+                    <span class="infos">{{ meetings.description }}</span>
                 </div>
-            </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="thumbs">
-                <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg">
-                <div class="caption">
-                    <span class="title">Заголовок картинки</span>
-                    <span class="infos">Краткое описание или анонс записи</span>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="thumbs">
-                <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg">
-                <div class="caption">
-                    <span class="title">Заголовок картинки</span>
-                    <span class="infos">Краткое описание или анонс записи</span>
-                </div>
-            </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="thumbs">
-                <img src="https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg">
-                <div class="caption">
-                    <span class="title">Заголовок картинки</span>
-                    <span class="infos">Краткое описание или анонс записи</span>
-                </div>
-            </div>
-            </div>
-          </div>
+              </div>
+        {% endfor %}
         </div>
-      </div>
-    </div>
   </section>
 
   <section class="apply-now" id="apply">
     <div class="workers">
-    <div class="container21">
-      <div class="card21">
-        <div class="imgBx">
-          <img src="{% static 'images/tom.png' %}">
-        </div>
-        <div class="contentBx">
-          <h2>Tom Holland</h2>
-        </div>
-      </div>
     </div>
-    <div class="container21">
-      <div class="card21">
-        <div class="imgBx">
-          <img src="{% static 'images/tom.png' %}">
-        </div>
-        <div class="contentBx">
-          <h2>Tom Holland</h2>
-        </div>
-      </div>
-    </div>
-    <div class="container21">
-      <div class="card21">
-        <div class="imgBx">
-          <img src="{% static 'images/tom.png' %}">
-        </div>
-        <div class="contentBx">
-          <h2>Tom Holland</h2>
-        </div>
-      </div>
-    </div>
-  </div>
   </section>
 
   <section class="our-courses" id="courses">
-   
-  </section>
-
-  <section class="our-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>A Few Facts About Our </h2>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-12">
-                  <div class="count-area-content percentage">
-                    <div class="count-digit">94</div>
-                    <div class="count-title">Succesed </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="count-area-content">
-                    <div class="count-digit">126</div>
-                    <div class="count-title">Current </div>
-                  </div>
-                </div>
+    <body onload="startTime()">
+      <div class="container-calendar">
+        <div class="card-calendar">
+          <div class="front">
+            <div class="contentfront">
+              <div class="month">
+                <table>
+                  <tr class="orangeTr">
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                    <th>S</th>
+                    <th>S</th>
+                  </tr>
+                  <tr class="whiteTr">
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                  </tr>
+                  <tr class="whiteTr">
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                  </tr>
+                  <tr class="whiteTr">
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>19</th>
+                    <th>20</th>
+                  </tr>
+                  <tr class="whiteTr">
+                    <th>21</th>
+                    <th>22</th>
+                    <th>23</th>
+                    <th>24</th>
+                    <th>25</th>
+                    <th>26</th>
+                    <th>27</th>
+                  </tr>
+                  <tr class="whiteTr">
+                    <th>28</th>
+                    <th>29</th>
+                    <th>30</th>
+                    <th>31</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </table>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-12">
-                  <div class="count-area-content new-students">
-                    <div class="count-digit">2345</div>
-                    <div class="count-title">New </div>
-                  </div>
-                </div> 
-                <div class="col-12">
-                  <div class="count-area-content">
-                    <div class="count-digit">32</div>
-                    <div class="count-title">Awards</div>
-                  </div>
+              <div class="date">
+                <div class="datecont">
+                  <div id="date"></div>
+                  <div id="day"></div>
+                  <div id="month"></div>
                 </div>
               </div>
             </div>
           </div>
-        </div> 
-        <div class="col-lg-6 align-self-center">
-          <div class="video">
-            <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"><img src="assets/images/play-icon.png" alt=""></a>
+          <div class="back">
+            <div class="contentback">
+              <div class="backcontainer-calendar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </section>
+
+  <section class="our-facts">
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+          
+            <div class="container21">
+              <div class="card21">
+                <div class="imgBx">
+                  <img src="{% static 'images/tom.png' %}">
+                </div>
+                <div class="contentBx">
+                  <h2>Tom Holland</h2>
+                </div>
+              </div>
+            </div>
+            
+            <div class="container21">
+              <div class="card21">
+                <div class="imgBx">
+                  <img src="{% static 'images/tom.png' %}">
+                </div>
+                <div class="contentBx">
+                  <h2>Tom Holland</h2>
+                </div>
+              </div>
+            </div>
+            
+            <div class="container21">
+              <div class="card21">
+                <div class="imgBx">
+                  <img src="{% static 'images/tom.png' %}">
+                </div>
+                <div class="contentBx">
+                  <h2>Tom Holland</h2>
+                </div>
+              </div>
+            </div>
+            
+            <div class="container21">
+              <div class="card21">
+                <div class="imgBx">
+                  <img src="{% static 'images/tom.png' %}">
+                </div>
+                <div class="contentBx">
+                  <h2>Tom Holland</h2>
+                </div>
+              </div>
+            </div>
+            
+            <div class="container21">
+              <div class="card21">
+                <div class="imgBx">
+                  <img src="{% static 'images/tom.png' %}">
+                </div>
+                <div class="contentBx">
+                  <h2>Tom Holland</h2>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>

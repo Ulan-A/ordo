@@ -257,3 +257,7 @@ body {
     margin-top: 10px;
   }
 }
+.row-meetings {
+  display: flex;
+  flex-wrap: wrap;
+}
