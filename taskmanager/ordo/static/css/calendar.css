@@ -10,7 +10,7 @@
 .container-calendar {
   width: 400px;
   height: 200px;
-  position: inherit;
+  position: sticky;
   perspective: 1000;
   -webkit-perspective: 1000;
   left: calc(50% - 200px);

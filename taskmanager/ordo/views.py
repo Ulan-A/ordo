@@ -5,6 +5,7 @@ from numpy import product
 from ordo .models import Room, Message
 from django.http import HttpResponse, JsonResponse
 from . models import *
+from .forms import *
 
 
 # Create your views here.
@@ -24,7 +25,14 @@ def meeting_details(request):
 
 
 def about(request):
-    return render(request, 'main/about.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'main/about.html')
+    else:
+        forms = ContactForm()
+    return render(request, 'main/about.html', {'form': forms})
 
 
 def wiki(request):
