@@ -17,7 +17,10 @@ def index(request):
 
 
 def meetings(request):
-    return render(request, 'main/meetings.html')
+    meets = Meets.objects.all()
+    context = {'meets': meets}
+
+    return render(request, 'main/meetings.html', context)
 
 
 def meeting_details(request):
@@ -29,7 +32,7 @@ def about(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, 'main/about.html')
+            return redirect('/')
     else:
         forms = ContactForm()
     return render(request, 'main/about.html', {'form': forms})

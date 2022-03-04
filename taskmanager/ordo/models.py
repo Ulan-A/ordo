@@ -1,5 +1,6 @@
 from email.policy import default
 from tabnanny import verbose
+from turtle import onclick
 from django.db import models
 from datetime import datetime
 from PIL import Image
@@ -33,7 +34,7 @@ class Meetings(models.Model):
     image = models.ImageField('Фото', default=False)
 
     class Meta(object):
-        verbose_name_plural = 'Встречи'
+        verbose_name_plural = 'События'
 
     def __str__(self):
         return f'{self.title}'
@@ -49,3 +50,17 @@ class Contact(models.Model):
 
     def __str__(self):
         return f'{self.name}'
+
+
+class Meets(models.Model):
+    date = models.DateField(default=False)
+    image = models.ImageField(default=False)
+    time = models.TimeField(default=False)
+    title = models.CharField(max_length=100, default=False)
+    text = models.TextField(default=False)
+
+    class Meta(object):
+        verbose_name_plural = 'Встречи'
+
+    def __str__(self):
+        return f'{self.title}'
