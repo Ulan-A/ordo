@@ -79,7 +79,7 @@
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.date {
+.dates {
   height: 100%;
   width: 130px;
   float: left;
@@ -95,8 +95,10 @@
   height: 100%;
   transform: translatez(60px) scale(0.9);
   -webkit-transform: translatez(60px) scale(0.9);
+  color: #ffffff;
+  font-size: 30px;
 }
-#date {
+#dates {
   font-size: 50px;
   color: #ecece7;
   font-family: "Montserrat", sans-serif;
@@ -106,25 +108,26 @@
 #day {
   float: right;
   font-size: 14px;
-  color: #232227;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 #month {
   float: right;
   font-size: 10px;
-  color: #232227;
+  color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
+  font-size: 14px;
 }
-.date i {
+.dates i {
   color: #ecece7;
   position: absolute;
   bottom: 10px;
   right: 0;
 }
-.date i:hover {
-  color: #232227;
+.dates i:hover {
+  color: #ffffff;
   transition: 0.3s ease;
 }
 .month {
