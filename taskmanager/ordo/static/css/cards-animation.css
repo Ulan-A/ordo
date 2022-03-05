@@ -11,7 +11,6 @@ body {
 .thumbs {
   width: 100%;
   max-width: 340px;
-  margin: 10px 20px 10px 0px;
   opacity: 0.99;
   overflow: hidden;
   position: relative;

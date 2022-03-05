@@ -2,16 +2,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .contact-form {
-  max-width: 420px;
   margin: auto;
-  width: 400px;
-  height: 300px;
+  width: 45%;
+  height: 270px;
   border-radius: 20px;
   background-color: #a12c2f;
-  margin-top: -150px;
-}
-.contact_ {
-  margin-left: 46px;
+  margin-top: 0px;
 }
 
 .feedback {
@@ -63,25 +59,39 @@ textarea {
   background: #cc4949;
 }
 .contact-form h1 {
-  margin-left: 63px;
   font-size: 25px;
+  position: static;
   font-weight: 500;
-  margin-top: 20px;
-  margin-bottom: 17px;
   color: #fff;
+  text-align: center;
+  margin-top: 20px;
 }
 .button {
-  width: 90%;
-  margin-top: 53px;
+  width: 100%;
+  margin-top: 40px;
   border-radius: 20px;
   background-color: #a12c2f;
   color: #fff;
-  margin-left: auto;
-  height: 10%;
+  margin-left: -2px;
+  height: 13%;
   font-size: 15px;
-  padding: 5px;
+  padding: 0px;
 }
 .button:hover {
   background-color: #979797c7;
   transition: 0.5s ease;
+}
+@media (max-width: 780px) {
+  .contact-form {
+    max-width: 436px;
+    margin: auto;
+    width: 85%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #a12c2f;
+    margin-top: 0px;
+  }
+  .button {
+    margin-top: 80px;
+  }
 }

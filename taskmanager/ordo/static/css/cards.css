@@ -8,21 +8,21 @@ body {
 }
 
 #container {
-  box-shadow: 0 15px 30px 1px rgb(0, 0, 0);
+  box-shadow: 0 15px 30px 1px rgb(0 0 0);
   background-color: #a7191d;
   text-align: center;
   border-radius: 20px;
   overflow: hidden;
   margin: 5em auto;
-  height: 350px;
-  width: 700px;
+  height: 336px;
+  width: 600px;
 }
 
 .product-details {
   position: relative;
   text-align: left;
   overflow: hidden;
-  padding: 30px;
+  padding: 20px 30px;
   height: 100%;
   float: left;
   width: 40%;
@@ -159,7 +159,7 @@ body {
   transition: all 0.3s ease-out;
   transform: translateX(-100%);
   position: absolute;
-  line-height: 2.8;
+  line-height: 1.8;
   text-align: left;
   font-size: 100%;
   cursor: context-menu;
@@ -203,7 +203,7 @@ body {
     width: 49%;
   }
   #container {
-    width: 600px;
+    width: 530px;
   }
   #container .product-details > p {
     font-size: 15px;
