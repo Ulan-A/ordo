@@ -29,14 +29,13 @@
         <link rel="stylesheet" href="{% static 'css/workers.css' %}">
         <link rel="stylesheet" href="{% static 'css/calendar.css' %}">
         <link rel="stylesheet" href="{% static 'css/contact-form.css' %}">
+</head>
 
-
-  
-
-     </head>
 
 <body>
-
+  <div class="loader_bg">
+    <div class="loader"></div>
+</div>
   <!-- Sub Header -->
   <div class="sub-header">
     <div class="container">
@@ -226,7 +225,16 @@
         if (i < 10) {i = "0" + i};
         return i;
     }
-    </script>
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+</script>
+
+
 </body>
 
 </body>

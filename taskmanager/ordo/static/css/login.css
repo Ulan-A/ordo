@@ -6,11 +6,11 @@ body {
   overflow: scroll;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(199, 37, 41, 1);
+  background: #fff;
 }
 
 .container {
-  height: 530px;
+  height: 550px;
   width: 350px;
   margin-bottom: auto;
   background: #1f272b;
@@ -18,8 +18,7 @@ body {
   display: table;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -28,7 +27,6 @@ body {
 h1 {
   text-align: center;
   color: #eee;
-  margin-bottom: 0px;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -36,7 +34,7 @@ h1 {
 input {
   border-radius: 4px;
   border: none;
-  width: 93%;
+  width: 95%;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: -7;
@@ -52,7 +50,7 @@ a {
 }
 
 .button {
-  background-color: #545454; /* Green */
+  background-color: #9d1a1d;
   border: none;
   color: white;
   padding: 10px 30px;
@@ -64,11 +62,12 @@ a {
   margin-left: 7px;
 }
 .button:hover {
-  background-color: rgb(53, 112, 163);
+  background: #6d6d6d5d;
+  transition: 0.5s ease;
   color: #eee;
 }
 .primaryAction-email {
-  background-color: #4caf50; /* Green */
+  background-color: #9d1a1d;
   border: none;
   color: white;
   padding: 10px 30px;
@@ -81,7 +80,7 @@ a {
   margin-bottom: 40px;
 }
 .primaryAction1 {
-  background-color: #4caf50; /* Green */
+  background-color: #9d1a1d;
   border: none;
   color: white;
   padding: 10px 30px;
@@ -93,7 +92,7 @@ a {
   margin-left: 107px;
 }
 .primaryAction {
-  background-color: #545454; /* Green */
+  background-color: #9d1a1d;
   border: none;
   color: white;
   padding: 10px 30px;
@@ -105,11 +104,13 @@ a {
   margin-left: 25px;
 }
 .primaryAction:hover {
-  background-color: rgb(53, 112, 163);
+  background: #6d6d6d5d;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 .primaryAction1:hover {
-  background-color: rgb(53, 112, 163);
+  background: #6d6d6d5d;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 .remember {
@@ -205,19 +206,17 @@ li {
 .logout {
   height: 150px;
   width: 300px;
-  margin-top: 190px;
   background: #1f272b;
-  position: relative;
-  display: table;
+  display: block;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
-  margin-top: 20px;
+  margin-top: 180px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
   padding: 10px 10px 10px 10px;
 }
+
 .logout h1 {
   margin-top: 10px;
 }
@@ -298,10 +297,11 @@ li {
   height: 30px;
   border-radius: 5px;
   color: #eee;
-  background-color: #4caf50;
+  background-color: #9d1a1d;
 }
 .btn1:hover {
-  background-color: rgb(53, 112, 163);
+  background-color: #545454;
+  transition: 0.5s ease;
   color: #eee;
   cursor: pointer;
 }
@@ -357,7 +357,7 @@ h2 {
   margin: 40px;
 }
 .botton {
-  margin-top: 150px;
+  margin-top: 250px;
   background-color: #545454;
   border: none;
   color: white;
@@ -369,16 +369,15 @@ h2 {
   border-radius: 7px;
   margin-left: auto;
   margin-right: auto;
-}
-.botton button {
-  background-color: #545454;
-  border: none;
-  color: #eee;
   cursor: pointer;
+}
+.botton :hover {
+  background: #6d6d6d5d;
+  transition: 0.5s ease;
 }
 
 .socialaccount_ballot li a {
-  background-color: #9d1a1d;
+  background-color: #2c4987;
   color: white;
   width: 100%;
   height: 25px;

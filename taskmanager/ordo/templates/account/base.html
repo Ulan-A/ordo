@@ -28,10 +28,10 @@
       <!-- <strong>Menu</strong> -->
       <ul>
         {% if user.is_authenticated %}
-      <div class="login-sign">
+      <!-- <div class="login-sign">
         <li class="change-email"><a href="{% url 'account_email' %}">Change E-mail</a></li> 
         <li class="log-out"><a href="{% url 'account_logout' %}">Sign Out</a></li>
-      </div> 
+      </div>  -->
         {% else %} 
         <!-- <div class="sign">
         <li><a class="sign-in" href="{% url 'account_login' %}">Sign In</a></li>

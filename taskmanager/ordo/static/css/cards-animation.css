@@ -12,6 +12,7 @@ body {
   width: 100%;
   max-width: 340px;
   opacity: 0.99;
+  margin: 4px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
