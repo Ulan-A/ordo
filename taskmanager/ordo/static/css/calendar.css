@@ -8,8 +8,8 @@
   height: 100vh;
 } */
 .container-calendar {
-  width: 400px;
-  height: 200px;
+  width: 380px;
+  height: 180px;
   position: sticky;
   perspective: 1000;
   -webkit-perspective: 1000;
@@ -81,7 +81,7 @@
 }
 .dates {
   height: 100%;
-  width: 130px;
+  width: 120px;
   float: left;
   background-color: #c52929;
   border-radius: 0 6px 6px 0;
@@ -132,7 +132,7 @@
 }
 .month {
   height: 100%;
-  width: 270px;
+  width: 250px;
   float: left;
   padding: 20px 30px;
   box-sizing: border-box;

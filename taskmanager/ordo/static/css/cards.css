@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 body {
-  background: #dfc2f2;
-  background-image: url(../images/meetings-bg.jpg);
+  background: #f3f3f300;
+  background-image: url(../images/meetings-bg.svg);
   background-attachment: fixed;
   background-size: cover;
 }

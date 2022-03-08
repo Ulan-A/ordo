@@ -15,8 +15,8 @@
 
 .container21 .card21 {
   position: relative;
-  width: 300px;
-  height: 225px;
+  width: 230px;
+  height: 170px;
   background: #232323;
   border-radius: 20px;
   overflow: hidden;
@@ -93,6 +93,7 @@
   color: #fff;
   margin: 0;
   margin-top: 35px;
+  font-size: 27px;
 }
 
 .container21 .card21 .contentBx .size,
