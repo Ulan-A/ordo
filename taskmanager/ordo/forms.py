@@ -1,7 +1,4 @@
 from django import forms
-from django.db.models import fields
-from django.forms import widgets
-from django.forms.fields import CharField
 from .models import *
 
 
@@ -13,4 +10,14 @@ class ContactForm(forms.ModelForm):
             'name': forms.TextInput(attrs={'class': "feedback", "placeholder": "Name", }),
             'email': forms.TextInput(attrs={'class': "feedback", "placeholder": "Email", }),
             'text': forms.TextInput(attrs={'class': "feedback", "placeholder": "Text", }),
+        }
+
+
+class UserForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['message', 'name']
+        widgets = {
+            'message': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'message'}),
+            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'name'}),
         }

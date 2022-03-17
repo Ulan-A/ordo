@@ -1,11 +1,17 @@
-from email.policy import default
-from tabnanny import verbose
-from turtle import onclick
+
 from django.db import models
 from datetime import datetime
 from PIL import Image
 
 # Create your models here.
+
+
+class User(models.Model):
+    message = models.TextField()
+    name = models.CharField(max_length=20)
+
+    def __str__(self):
+        return f'{self.message}'
 
 
 class Room(models.Model):

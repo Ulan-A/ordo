@@ -1,7 +1,4 @@
-from dataclasses import field
-from turtle import title
 from django.shortcuts import render, redirect
-from numpy import product
 from ordo .models import Room, Message
 from django.http import HttpResponse, JsonResponse
 from . models import *
@@ -84,3 +81,14 @@ def getMessages(request, room):
 
     messages = Message.objects.filter(room=room_details.id)
     return JsonResponse({"messages": list(messages.values())})
+
+
+def online_chat(requst):
+    context = {}
+    form = UserForm(requst.POST or None)
+    if form.is_valid():
+        form.save()
+
+    context["dataset"] = User.objects.all()
+    context['form'] = form
+    return render(requst, 'main/online-chat.html', context)

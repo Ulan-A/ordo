@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="{% static 'css/cards.css' %}">
         <link rel="stylesheet" href="{% static 'css/wrapper.css' %}">
         <link rel="stylesheet" href="{% static 'css/room.css' %}">
+        <link rel="stylesheet" href="{% static 'css/new-chat.css' %}">
         <link rel="stylesheet" href="{% static 'css/room-chat.css' %}">
         <link rel="stylesheet" href="{% static 'css/cards-animation.css' %}">
         <link rel="stylesheet" href="{% static 'css/workers.css' %}">
@@ -74,8 +75,9 @@
                               <a href="javascript:void(0)">Pages</a>
                               <ul class="sub-menu">
                                   <li><a href="{% url 'meetings' %}">Meetings</a></li>
+                                  <li><a href="{% url 'online_chat' %}">Online chat</a></li>
                                   <li><a href="{% url 'wiki' %}">Wikipedia</a></li>
-                                  <li><a href="{% url 'meeting-details' %}">Meeting Details</a></li>
+                                  <li><a href="{% url 'meeting-details' %}">Community</a></li>
                               </ul>
                           </li>
                         
@@ -83,10 +85,10 @@
                           <!-- Вход и выход -->
                             {% if user.is_authenticated %}
                             <li><a href="{% url 'forum-home' %}">Forum</a></li>
-                            <li><a href="{% url 'account_logout' %}">Выход</a></li>
+                            <li><a href="{% url 'account_logout' %}">Exit</a></li>
                             {% else %}
-                            <li><a href="{% url 'account_login' %}">Вход</a></li>
-                            <li><a href="{% url 'account_signup' %}">Регистрация</a></li>
+                            <li><a href="{% url 'account_login' %}">Enter</a></li>
+                            <li><a href="{% url 'account_signup' %}">Registration</a></li>
                             {% endif %}
                             <!-- Вход и выход -->
                       </ul>        

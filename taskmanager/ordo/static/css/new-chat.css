@@ -1,0 +1,82 @@
+.main {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  overflow: scroll;
+  margin-top: 150px;
+  background-color: #16212e;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: -25px;
+  padding: 0px 35px 0px 0px;
+  /* background: url(../img/main-qimg) */
+  /* no-repeat center; */
+}
+.name {
+  padding: 10px 15px 8px 10px;
+  text-align: left;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 7px;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 10px;
+  /* border: 0.5px groove; */
+  width: fit-content;
+  background-color: #41a8f6;
+  /* background: #60606008; */
+}
+h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.chats {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type="text"] {
+  display: block;
+  width: 40%;
+  height: 30px;
+  border: none;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 5px 10px 5px 15px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15;
+}
+.bots {
+  background-color: #16212e;
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition-duration: 0.4s;
+}
+.bots:hover {
+  background-color: #eee; /* Green */
+  color: rgb(0, 0, 0);
+}
+.nickname {
+  font-weight: 700;
+  font-size: 13px;
+  color: #212529;
+  text-transform: uppercase;
+}
+@media (max-width: 900px) {
+  .main {
+    width: 80%;
+  }
+  input[type="text"] {
+    width: 60%;
+  }
+}

@@ -14,7 +14,9 @@
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: left;
 }
 .buttonHolder {
   display: grid;
@@ -58,20 +60,20 @@ p {
   background-color: rgb(53, 112, 163);
 }
 .password-reset {
-  width: 35%;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  background: #00000024;
   border-radius: 10px;
   margin-top: 35px;
   padding: 10px;
+  width: 300px;
+  background: #1f272b;
+  margin-left: auto;
+  margin-right: auto;
 }
 .input-submit {
-  width: 35%;
-  margin-left: 150px;
-  margin-right: 150px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
+  display: block;
   color: #eee;
   background-color: #4caf50;
 }
