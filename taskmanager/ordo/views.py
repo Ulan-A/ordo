@@ -40,7 +40,14 @@ def wiki(request):
 
 
 def forum_home(request):
-    return render(request, 'main/forum-home.html')
+    context = {}
+    form = UserForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+
+    context["dataset"] = User.objects.all()
+    context['form'] = form
+    return render(request, 'main/forum-home.html',context)
 
 
 def room(request, room):
@@ -83,12 +90,5 @@ def getMessages(request, room):
     return JsonResponse({"messages": list(messages.values())})
 
 
-def online_chat(requst):
-    context = {}
-    form = UserForm(requst.POST or None)
-    if form.is_valid():
-        form.save()
 
-    context["dataset"] = User.objects.all()
-    context['form'] = form
-    return render(requst, 'main/online-chat.html', context)
+    

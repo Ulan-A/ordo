@@ -28,6 +28,7 @@
     </div>
 </section>
 <!-- video end -->
+<div class="obj">
 <div class="container11">
   <div class="main-ordo">
       <h2>Ordo.kg</h2>
@@ -44,5 +45,21 @@
     </div>
   </div>
 </div>
+<div class="main">
+  {% for data in dataset %}
+  <div class="name">
+    <h1 class="nickname">{{ data.name }}</h1>
+    <h1>{{ data.message }}</h1>
+  </div>
+  {% endfor %}
+</div>
+<form method="POST">
+{% csrf_token %}
+<div class="chats">
+  <div class="text">{{ form.name }}</div>
+  <div class="text">{{ form.message }}</div>
+  <input class="bots" type="submit" value="Submit">
+</div>
+</form>
 {% endblock %}
 
