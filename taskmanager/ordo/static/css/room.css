@@ -2,8 +2,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 330px;
-  height: 280px;
+  width: 300px;
+  height: 250px;
   background-color: #9d1a1d;
   color: #fff;
   margin-top: 90px;
@@ -41,16 +41,6 @@ form {
   background-color: #545454;
 }
 @media (max-width: 700px) {
-  .container11 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 335px;
-    height: 280px;
-    background-color: #9d1a1d;
-    margin-top: 90px;
-    border-radius: 20px;
-  }
   .main-ordo h2 {
     margin-top: 10px;
     padding: 12px 0px 0px 0px;

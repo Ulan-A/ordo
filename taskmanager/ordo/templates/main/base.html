@@ -3,7 +3,6 @@
 {% load static %}
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="">
-      <meta name="author" content="TemplateMo">
       <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 
@@ -69,18 +68,16 @@
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
                         <li><a href="/">Home</a></li>
-                          <li><a href="{% url 'about' %}">About us</a></li>
-                          <!-- <li class="scroll-to-section"><a href="#apply">Wiki</a></li> -->
+                        <li><a href="{% url 'community' %}">Community</a></li>
                           <li class="has-sub">
                               <a href="javascript:void(0)">Pages</a>
                               <ul class="sub-menu">
                                   <li><a href="{% url 'meetings' %}">Meetings</a></li>
                                   <li><a href="{% url 'wiki' %}">Wikipedia</a></li>
-                                  <li><a href="{% url 'meeting-details' %}">Community</a></li>
+                                  <li><a href="{% url 'about_us' %}">About us</a></li>
                               </ul>
                           </li>
                         
-                          <!-- <li class="scroll-to-section"><a href="{% url 'about' %}">About us</a></li>  -->
                           <!-- Вход и выход -->
                             {% if user.is_authenticated %}
                             <li><a href="{% url 'forum-home' %}">Forum</a></li>
@@ -104,7 +101,7 @@
   {% block content %}
   {% endblock %}
   <div class="footer">
-    <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. 
+    <p>Copyright © 2022 Ordo Co., Ltd. All Rights Reserved. 
         <br>Design: <a href="/" target="_parent" title="Rahimovsaga@g,ail.com">IT specialist</a></p>
   </div>
 </section>

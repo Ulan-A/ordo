@@ -20,19 +20,9 @@ def meetings(request):
     return render(request, 'main/meetings.html', context)
 
 
-def meeting_details(request):
-    return render(request, 'main/meeting-details.html')
+def community(request):
+    return render(request, 'main/community.html')
 
-
-def about(request):
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-    else:
-        forms = ContactForm()
-    return render(request, 'main/about.html', {'form': forms})
 
 
 def wiki(request):
@@ -91,4 +81,7 @@ def getMessages(request, room):
 
 
 
-    
+def about_us(request):
+    return render(request, 'main/about_us.html')
+
+

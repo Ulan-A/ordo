@@ -756,7 +756,7 @@ banner
 }
 
 .main-banner .caption h6 {
-  margin-top: 0px;
+  margin-top: 40px;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
@@ -1541,7 +1541,7 @@ section.meetings-page {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 140px;
-  padding-bottom: 0px;
+  padding-bottom: 100px;
 }
 
 section.meetings-page .filters {
@@ -1869,4 +1869,24 @@ responsive
   .header-area .main-nav .nav li ul.sub-menu li a {
     color: #1f272b;
   }
+}
+
+.texts {
+  margin-left: 60px;
+  margin-right: auto;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.title {
+  font-size: 30px;
+  font-family: auto;
+  font-weight: 700;
+}
+.titletext {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 19px;
+  font-family: auto;
 }

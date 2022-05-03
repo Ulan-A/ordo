@@ -10,19 +10,18 @@ body {
 }
 .thumbs {
   width: 100%;
-  max-width: 340px;
+  max-width: 287px;
   opacity: 0.99;
-  margin: 4px;
+  margin: 10px;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
   cursor: pointer;
-  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%),
+    0 17px 50px 0 rgb(0 0 0 / 19%);
   -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 15px 0 rgb(0 0 0 / 24%), 0 17px 50px 0 rgb(0 0 0 / 19%);
 }
 .thumbs:before {
   content: "";

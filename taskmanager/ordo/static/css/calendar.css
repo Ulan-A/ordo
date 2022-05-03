@@ -10,6 +10,8 @@
 .container-calendar {
   width: 380px;
   height: 180px;
+  margin-left: auto;
+  margin-right: auto;
   position: sticky;
   perspective: 1000;
   -webkit-perspective: 1000;

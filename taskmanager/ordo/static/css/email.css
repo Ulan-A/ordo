@@ -14,7 +14,7 @@
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   color: rgb(255, 255, 255);
   text-align: left;
 }
@@ -91,6 +91,4 @@ p {
   text-align: center;
   background: #00000024;
   border-radius: 7px;
-}
-.colorit {
 }

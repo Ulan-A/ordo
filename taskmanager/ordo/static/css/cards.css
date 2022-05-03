@@ -159,7 +159,7 @@ body {
   transition: all 0.3s ease-out;
   transform: translateX(-100%);
   position: absolute;
-  line-height: 1.8;
+  line-height: 1.6;
   text-align: left;
   font-size: 100%;
   cursor: context-menu;
@@ -197,10 +197,10 @@ body {
     position: relative;
     text-align: left;
     overflow: hidden;
-    padding: 30px;
+    padding: 20px;
     height: 100%;
     float: left;
-    width: 49%;
+    width: 50%;
   }
   #container {
     width: 530px;
@@ -214,11 +214,11 @@ body {
       font-size: 16px;
     }
     #container {
-      width: 400px;
-      height: 230px;
+      width: 370px;
+      height: 235px;
     }
     #container .product-details > p {
-      font-size: 8px;
+      font-size: 10px;
       margin-top: 4px;
       text-align: left;
     }

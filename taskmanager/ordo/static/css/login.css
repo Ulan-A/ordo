@@ -45,7 +45,8 @@ input {
 a {
   text-decoration: none;
   color: #eee;
-  font-size: 13px;
+  font-size: 15px;
+  text-decoration: underline;
 }
 
 .button {
@@ -82,13 +83,16 @@ a {
   background-color: #9d1a1d;
   border: none;
   color: white;
-  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 7px;
-  margin-left: 107px;
+  display: block;
+  font-size: 17px;
+  height: 35px;
+  width: 130px;
+  border-radius: 10px;
+  margin-top: 27px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .primaryAction {
   background-color: #9d1a1d;
@@ -131,7 +135,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  padding: 10px 10px 30px 10px;
+  padding: 10px 10px 20px 10px;
 }
 ul {
   height: 80px;
@@ -339,6 +343,7 @@ h2 {
 .bitton {
   font-size: 14px;
   color: #4267b2;
+  text-decoration: underline;
 }
 .login-sign {
   width: 30%;
